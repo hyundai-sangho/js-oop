@@ -8,3 +8,6 @@ function sum(prefix) {
 // sum();
 console.log("sum.call(kim)", sum.call(kim, "=> ")); //apply
 console.log("sum.call(lee)", sum.call(lee, ": "));
+
+let kimSum = sum.bind(kim, "-> ");
+console.log("kimSum()", kimSum());
