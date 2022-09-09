@@ -10,8 +10,13 @@ class Person {
   }
 }
 
-let kim = new Person("kim", 10, 20);
-let lee = new Person("lee", 10, 10);
+class PersonPlus extends Person {
+  avg() {
+    return (this.first + this.second) / 2;
+  }
+}
+
+let kim = new PersonPlus("kim", 10, 20);
 
 console.log("kim.sum()", kim.sum());
-console.log("lee.sum()", lee.sum());
+console.log("kim.avg()", kim.avg());
